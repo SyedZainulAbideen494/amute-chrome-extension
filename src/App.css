@@ -1,0 +1,212 @@
+body {
+  background-color: #e0f7fa;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  height: 100vh;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.chat-container {
+  width: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.chat-header {
+  background: linear-gradient(to bottom, #643eff, #f58bff);
+  padding: 7px; /* Padding around text */
+  text-align: center; /* Center align text */
+  color: #ffffff; /* Text color */
+  font-size: 1.5em; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-bottom: 2px solid #1de9b6; /* Bottom border with color */
+}
+.chat-messages {
+  padding: 20px;
+  height: 400px;
+  overflow-y: auto;
+  background: #ffffff;
+  color: #000000;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.message.user {
+  background: #f1f0f0;
+  align-self: flex-start;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.message.assistant {
+  background: #1de9b6;
+  color: #fff;
+  margin-left: 10px;
+  align-self: flex-end;
+}
+
+.message-form {
+  display: flex;
+  padding: 10px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  background: #e0f7fa;
+}
+
+.send-button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #643eff, #f58bff);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-button img {
+  width: 20px;
+}
+
+.send-button:hover {
+  background: linear-gradient(to bottom, #502bcc, #d86aff);
+}
+
+.todo-list {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h2 {
+  font-size: 24px;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  background: #f9f9f9;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-list li:hover {
+  background: #e0f7fa;
+}
+
+.todo-list button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #004d40;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-list button:hover {
+  background: #00695c;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: #ffffff;
+  color: black;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #004d40, #1de9b6);
+  color: #ffffff;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.action-button:hover {
+  background: linear-gradient(45deg, #00695c, #64ffda);
+  transform: scale(1.05);
+}
